@@ -1,4 +1,5 @@
-import { Tv, Fan, Lightbulb, Smartphone, Refrigerator, Wind } from "lucide-react"
+import { Tv, Fan, Lightbulb, Smartphone, Refrigerator, Wind, Instagram, Linkedin } from "lucide-react"
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -20,24 +21,24 @@ export default function PackagesPage() {
             </div>
 
             <nav className="hidden md:flex space-x-8">
-              <a href="/" className="text-gray-600 hover:text-gray-900">
+              <Link href="/" className="text-gray-600 hover:text-gray-900">
                 Home
-              </a>
-              <a href="/packages" className="text-orange-500 font-medium border-b-2 border-orange-500 pb-1">
+              </Link>
+              <Link href="/packages" className="text-orange-500 font-medium border-b-2 border-orange-500 pb-1">
                 Packages
-              </a>
-              <a href="#" className="text-gray-600 hover:text-gray-900">
+              </Link>
+              <Link href="#" className="text-gray-600 hover:text-gray-900">
                 Projects
-              </a>
-              <a href="#" className="text-gray-600 hover:text-gray-900">
+              </Link>
+              <Link href="#" className="text-gray-600 hover:text-gray-900">
                 Services
-              </a>
-              <a href="#" className="text-gray-600 hover:text-gray-900">
+              </Link>
+              <Link href="#" className="text-gray-600 hover:text-gray-900">
                 About Us
-              </a>
-              <a href="#" className="text-gray-600 hover:text-gray-900">
+              </Link>
+              <Link href="#" className="text-gray-600 hover:text-gray-900">
                 Contact Us
-              </a>
+              </Link>
             </nav>
 
             <Button className="bg-orange-500 hover:bg-orange-600 text-white">Get a Quote</Button>
@@ -401,10 +402,10 @@ export default function PackagesPage() {
             </a>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white">
-                <span className="sr-only">Instagram</span>📷
+                <Instagram />
               </a>
               <a href="#" className="text-gray-400 hover:text-white">
-                <span className="sr-only">LinkedIn</span>💼
+                <Linkedin />
               </a>
             </div>
           </div>

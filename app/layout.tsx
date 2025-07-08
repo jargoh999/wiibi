@@ -1,13 +1,9 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
 import "./globals.css";
 
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  variable: "--font-montserrat",
-  display: "swap",
-  weight: ["400", "500", "600", "700"],
-});
+
+
+
 
 export const metadata: Metadata = {
   title: "Wiibi Energy",
@@ -21,8 +17,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.variable} font-sans`}>
-        {children}
+      <head>
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet" />
+      </head>
+      <body className="font-['Plus_Jakarta_Sans',_sans-serif]">
+          {children}
       </body>
     </html>
   );
